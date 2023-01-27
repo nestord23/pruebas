@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>EJERCCIO 5</title>
+</head>
+<body>
+    <H1>CALCULO DE AREA Y VOLUMEN DE UN CIRCULO</H1><br>
+    RADIO DEL CIRCULO <input type="text" id="radio" name="radio"><br>
+    ALTURA DE UN CIRCULO:<input type="text" id="altura" name="altura"><br>
+    <button type="button" onclick="CalcularRadio()">Calcular</button><br>
+   
+    <p id="resultado"></p>
+    <p id="resultado2"></p>
+
+    <script>
+        function CalcularRadio()
+        {
+            var radio = document.getElementById("radio").value;
+            var altura = document.getElementById("altura").value;
+            var res1 = radio * Math.PI*radio*altura;
+            var res2 = Math.PI * Math.pow(radio, 2);
+            document.getElementById("resultado").innerHTML="EL VOLUMEN DE LA SUPERFICIE ES DE: " + res1.toFixed(2);
+            document.getElementById("resultado2").innerHTML="LA SUPEFICIE DEL CILINDRO" + res2.toFixed(2);
+            
+        }
+    </script>
+
+</body>
+</html>

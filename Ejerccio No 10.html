@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>Ejerccio No 10</title>
+    </head>
+    <body>
+        <p>Ingrese la hora en formato:</p>
+        <input type="text" id="hora" placeholder="hora">
+        <input type="text" id="minuto" placeholder="Minutoos">
+        <input type="text" id="segundos" placeholder="Segundos">
+        <button onclick="calcularSegundos()">Calcular</button>
+        <P id="resultado"></P>
+        <script>
+            function calcularSegundos() {
+                var hora = document.getElementById("hora").value;
+                var minuto = document.getElementById("minuto").value;
+                var segundos = document.getElementById("segundos").value;
+                var totalSegundos = (hora*3600)+(minuto*60)+segundos;
+                document.getElementById("resultado").innerHTML = totalSegundos + " segundos";
+            }
+        </script>
+    </body>
+</html>

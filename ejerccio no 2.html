@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Cálculo del área del triángulo</title>
+</head>
+<body>
+  <form>
+    Base: <input type="text" id="base">
+    <br><br>
+    Altura: <input type="text" id="altura">
+    <br><br>
+    <button type="button" onclick="calculateArea()">Calcular</button>
+    <br>
+    <br>
+  </form>
+  <p>Área: <span id="area"></span></p>
+
+  <script>
+    function calculateArea() {
+      var base = document.getElementById("base").value;
+      var alturaa = document.getElementById("altura").value;
+      var area = (base * alturaa) / 2;
+      document.getElementById("area").innerHTML = area;
+    }
+  </script>
+</body>
+</html>

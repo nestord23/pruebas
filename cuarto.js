@@ -1,0 +1,11 @@
+let radio="2";
+let res1,res2,res3;
+const pi=3.1416;
+console.log("ingrese el radio del circulo");
+radio;
+res1= (2*pi*radio);
+res2= 4*pi*radio*radio;
+res3 =(4/3*pi*radio*radio*radio);
+console.log("la longuitud es de ",res1);
+console.log("area es de",res2);
+console.log("el volumen es de ", res3);

@@ -1,0 +1,20 @@
+<html>
+  <head>
+    <title>Ejerccio NO 7</title>
+  </head>
+  <body>
+    <h1>Cuadro De Un Numero</h1>
+    Ingrese un número para calcular su cuadrado:<input type="number" id="numero">
+    <button onClick="calcularCuadrado()">Calcular</button>
+    <p id="resultado"></p>
+
+    <script>
+        function calcularCuadrado() {
+            var numero = document.getElementById("numero").value;
+            var cuadrado = numero * numero;
+            document.getElementById("resultado").innerHTML = "El cuadrado de " + numero + " es " + cuadrado;
+}
+</script>
+
+  </body>
+</html>

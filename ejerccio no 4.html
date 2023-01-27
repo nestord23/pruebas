@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>EJERCCIO 4</title>
+</head>
+<body>
+    <H1>CALCULO DE AREA DE UN CIRCULO</H1><br>
+    RADIO DEL CIRCULO <input type="text" id="radio" name="radio"><br>
+    <button type="button" onclick="CalcularRadio()">Calcular</button><br>
+    <p id="resultado"></p>
+    <p id="resultado2"></p>
+    <p id="resultado3"></p>
+    <script>
+        function CalcularRadio()
+        {
+            var radio = document.getElementById("radio").value;
+            var res1 = radio * Math.PI;
+            var res2 = Math.PI * Math.pow(radio, 2);
+            var res3 = 4/3 * Math.PI*Math.pow(radio, 3);
+            document.getElementById("resultado").innerHTML="LA LONGUITUD ES DE: " + res1.toFixed(2);
+            document.getElementById("resultado2").innerHTML="EL AREA DEL CIRCULO ES: " + res2.toFixed(2);
+            document.getElementById("resultado3").innerHTML="EL VOLUMEN ES DE: " + res3.toFixed(2);
+        }
+    </script>
+
+</body>
+</html>
